@@ -17,6 +17,8 @@ while True:
 
     if r_num == p_num:
         print('BOOM')
+    elif p_num not in range(r['From'],r['to']):
+        print(f'please input number in between {r}')
     else:
         if r_num  in range(r['From'],p_num):
            r['to'] = p_num
